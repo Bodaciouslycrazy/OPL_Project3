@@ -2,6 +2,17 @@
 <head>
 <link rel="stylesheed" type="text/css" href="mystyle.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $(".readmore").click(function(){
+      if ($(".lyrics").css("display") == "block") {
+        $(".lyrics").hide();
+      } else {
+        $(".lyrics").show();
+      }
+    });
+  });
+</script>
 </head>
 <body>
 <h1>Merry Christmas!</h1>
