@@ -1,7 +1,18 @@
 <html>
 <head>
 <link rel="stylesheed" type="text/css" href="mystyle.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $(".readmore").click(function(){
+      if ($(".lyrics").css("display") == "block") {
+        $(".lyrics").hide();
+      } else {
+        $(".lyrics").show();
+      }
+    });
+  });
+</script>
 </head>
 <body>
 <h1><b>Merry Christmas!</b></h1>
@@ -60,7 +71,5 @@ Fa la la la la, la la la la.
 Heedless of the wind and weather, 
 Fa la la la la, la la la la. 
 </p>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
