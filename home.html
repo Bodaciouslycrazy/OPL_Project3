@@ -19,10 +19,18 @@
         $(".santa").fadeOut();
       }
     });
-	
-	setInterval(function(){
-		$("#slider").slideToggle(50);
-	}, 100);
+
+    setInterval(function(){
+      $("#slider").slideToggle(50);
+    }, 100);
+
+    setInterval(function() {
+      if (parseInt($("#annoy").css("margin-left"), 10) < 500) {
+        $("#annoy").animate({marginLeft: "+=800",}, 1000);
+      } else {
+        $("#annoy").animate({marginLeft: "-=800",}, 1000);
+      }
+    }, 1000);
   });
 </script>
 </head>
@@ -91,10 +99,7 @@ Heedless of the wind and weather, <br/>
 Fa la la la la, la la la la. <br/>
 </p>
 
-<img id="slider" src="https://mumsiebeaver.files.wordpress.com/2016/12/tnrcdp6.gif" alt="Buddy the elf, what's your favorite color?">
-
-
-<div><h1>Santa's List (Table)</h1></div>
+<h1>Santa's List (Table)</h1>
 <table>
   <tr>
     <th>Firstname</th>
@@ -115,5 +120,10 @@ Fa la la la la, la la la la. <br/>
     <td>No</td>
   </tr>
 </table>
+
+<div id="annoy">
+  <img id="slider" src="https://mumsiebeaver.files.wordpress.com/2016/12/tnrcdp6.gif" alt="Buddy the elf, what's your favorite color?">
+</div>
+
 </body>
 </html>
