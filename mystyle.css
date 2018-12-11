@@ -1,6 +1,14 @@
 /* Element selector */
+p {
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+}
 
 /* ID selector */
+#christmas {
+  font-size: 20px;
+  color: red;
+}
 
 /* Class selector */
 .lyrics {
